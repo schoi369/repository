@@ -35,7 +35,7 @@ public class Person4 {
                 "Cannot insert null data in to data structure.");
         }
         String answer = "";
-        char add = '0'
+        char add = '0';
         for (int i = 0; i < input.length(); i++) {
             add = input.charAt(i);
             add += 1;
