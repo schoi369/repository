@@ -8,6 +8,10 @@ package edu.gatech.oad.antlab.person;
  * @author Bob
  * @version 1.1
  */
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Person2 {
     /** Holds the persons real name */
     private String name;
@@ -31,7 +35,19 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+	    List<Character> chars = new ArrayList<Character>();
+        for(char c : input.toCharArray()){
+            chars.add(c);
+        }
+
+        String output = "";
+
+        while(chars.size() != 0) {
+        	int randNumber = (int)(Math.random() * chars.size());
+        	output = output + (chars.remove(randNumber));
+        }
+        
+        return output;
 	}
 	/**
 	 * Return a string rep of this object
