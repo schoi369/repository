@@ -37,7 +37,6 @@ public class Person5 {
 	  }
 	  newStr += input.charAt(0);
 	  newStr += input.charAt(1);
-	  System.out.println(newStr);
 	  return newStr;
 	}
 	
