@@ -1,5 +1,4 @@
 package edu.gatech.oad.antlab.person;
-import java.util.Arrays;
 
 /**
  *  A simple class for person 5
@@ -32,15 +31,13 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  Object[] arr2 = new Object[input.length()];
-	  char[] arr = input.toCharArray();
-	  for (int i = 0; i < arr.length - 2; i++) {
-	  	arr2[i] = arr[i + 2];
+	  String newStr = "";
+	  for (int i = 0; i < input.length(); i++) {
+	  	newStr += input.charAt(i + 2);
 	  }
-	  arr2[arr2.length] = arr[0];
-	  arr2[arr2.length] = arr[1];
-	  System.out.println(arr2);
-	  return Arrays.toString(arr2);
+	  newStr += input.charAt(0);
+	  newStr += input.charAt(1);
+	  return newStr;
 	}
 	
 	/**
